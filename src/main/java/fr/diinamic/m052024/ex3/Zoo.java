@@ -1,4 +1,4 @@
-package ex3;
+package fr.diinamic.m052024.ex3;
 public class Zoo {
 
 	private String nom;

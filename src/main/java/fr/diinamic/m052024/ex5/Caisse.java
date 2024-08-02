@@ -1,4 +1,4 @@
-package ex5;
+package fr.diinamic.m052024.ex5;
 
 import java.util.ArrayList;
 import java.util.List;

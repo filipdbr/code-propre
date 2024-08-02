@@ -1,4 +1,4 @@
-package ex2;
+package fr.diinamic.m052024.ex2;
 
 public class LivretA extends CompteBancaire {
 

@@ -1,4 +1,4 @@
-package ex2;
+package fr.diinamic.m052024.ex2;
 
 /** Représente un compte bancaire de type compte courante (type=CC) ou livret A (type=LA)
  * @author DIGINAMIC

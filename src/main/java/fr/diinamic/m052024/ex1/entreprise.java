@@ -1,4 +1,4 @@
-package ex1;
+package fr.diinamic.m052024.ex1;
 
 import java.util.Date;
 

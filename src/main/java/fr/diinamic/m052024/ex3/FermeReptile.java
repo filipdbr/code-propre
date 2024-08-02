@@ -1,4 +1,4 @@
-package ex3;
+package fr.diinamic.m052024.ex3;
 import java.util.List;
 
 public class FermeReptile {
