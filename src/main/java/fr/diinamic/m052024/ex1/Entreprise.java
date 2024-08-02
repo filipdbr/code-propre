@@ -37,5 +37,4 @@ public class Entreprise {
 
 	// + getters, setters et toString
 
-	}
 }
