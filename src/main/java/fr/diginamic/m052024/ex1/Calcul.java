@@ -1,4 +1,4 @@
-package fr.diinamic.m052024.ex1;
+package fr.diginamic.m052024.ex1;
 
 /**
  * La classe Calcul fournit des méthodes qui effectuent

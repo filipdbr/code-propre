@@ -1,4 +1,4 @@
-package fr.diinamic.m052024.ex5;
+package fr.diginamic.m052024.ex5;
 
 public class Item {
 

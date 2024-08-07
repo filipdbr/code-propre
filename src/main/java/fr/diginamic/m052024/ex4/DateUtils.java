@@ -1,4 +1,4 @@
-package fr.diinamic.m052024.ex4;
+package fr.diginamic.m052024.ex4;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

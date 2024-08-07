@@ -1,7 +1,7 @@
-package fr.diinamic.m052024.ex3;
+package fr.diginamic.m052024.ex3;
 import java.util.List;
 
-public class ZoneCarnivore {
+public class Aquarium {
 
 	private List<String> types;
 	private List<String> noms;
@@ -20,6 +20,6 @@ public class ZoneCarnivore {
 	}
 	
 	public double calculerKgsNourritureParJour(){
-		return noms.size() * 10;
+		return noms.size() * 0.2;
 	}
 }
