@@ -1,9 +1,10 @@
-package fr.diginamic.m052024.ex3;
+package fr.diginamic.m052024.ex3.zones;
+import fr.diginamic.m052024.ex3.animaux.Animal;
+
 import java.util.List;
 
-public class FermeReptile {
+public class Aquarium {
 
-	private List<String> types;
 	private List<String> noms;
 	private List<String> comportements;
 	
@@ -19,11 +20,7 @@ public class FermeReptile {
 		}
 	}
 	
-	public int compterAnimaux(){
-		return noms.size();
-	}
-	
 	public double calculerKgsNourritureParJour(){
-		return noms.size() * 0.1;
+		return noms.size() * 0.2;
 	}
 }

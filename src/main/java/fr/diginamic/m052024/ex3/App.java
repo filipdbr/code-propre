@@ -1,5 +1,13 @@
 package fr.diginamic.m052024.ex3;
-public class ZooApplication {
+public class App {
+
+	/* todo:
+	    1. Create classes for zones eg. aquarium etc
+	    2. Add javadoc to animals package
+
+	   So far I've created a mother class of animals and then sublasses birds, mammals etc.
+	   I can consider this part done 
+	 */
 
 	public static void main(String[] args) {
 		Zoo zoo = new Zoo("Thoiry");

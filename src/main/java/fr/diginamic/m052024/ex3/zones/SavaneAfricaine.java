@@ -1,4 +1,4 @@
-package fr.diginamic.m052024.ex3;
+package fr.diginamic.m052024.ex3.zones;
 import java.util.List;
 
 public class SavaneAfricaine {

@@ -1,40 +1,35 @@
 package fr.diginamic.m052024.ex3;
-public class Zoo {
 
+import fr.diginamic.m052024.ex3.animaux.Animal;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class  Zoo {
+
+	// attributs
 	private String nom;
-	private SavaneAfricaine savaneAfricaine;
-	private ZoneCarnivore zoneCarnivore;
-	private FermeReptile fermeReptile;
-	private Aquarium aquarium;
-	
+	private Set<Animal> animals;
+
+	// constructeur
 	public Zoo(String nom){
 		this.nom = nom;
+		this.animals = new HashSet<>();
 	}
-	
-	public void addAnimal(String nomAnimal, String typeAnimal, String comportement){
-		if (typeAnimal.equals("MAMMIFERE") && comportement.equals("CARNIVORE")){
-			zoneCarnivore.addAnimal(typeAnimal, nomAnimal, comportement);
-		}
-		else if (typeAnimal.equals("MAMMIFERE") && comportement.equals("HERBIVORE")){
-			savaneAfricaine.addAnimal(typeAnimal, nomAnimal, comportement);
-		}
-		else if (typeAnimal.equals("REPTILE")){
-			fermeReptile.addAnimal(typeAnimal, nomAnimal, comportement);
-		}
-		else if (typeAnimal.equals("POISSON")){
-			aquarium.addAnimal(typeAnimal, nomAnimal, comportement);
-		}
+
+	//méthodes
+	public void addAnimal(Animal animal){
+		this.animals.add(animal);
 	}
 	
 	public void afficherListeAnimaux(){
-		savaneAfricaine.afficherListeAnimaux();
-		zoneCarnivore.afficherListeAnimaux();
-		fermeReptile.afficherListeAnimaux();
-		aquarium.afficherListeAnimaux();
+		for (Animal animal : animals){
+			System.out.println(animal);
+		}
 	}
 
 	/** Getter for nom
-	 * @return the nom
+	 * @return le nom
 	 */
 	public String getNom() {
 		return nom;
@@ -45,5 +40,15 @@ public class Zoo {
 	 */
 	public void setNom(String nom) {
 		this.nom = nom;
+	}
+
+	// provides access to this set
+	public Set<Animal> getAnimals() {
+		return animals;
+	}
+
+	// let me setting animals set
+	public void setAnimals(Set<Animal> animals) {
+		this.animals = animals;
 	}
 }
