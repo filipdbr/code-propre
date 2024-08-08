@@ -1,14 +1,14 @@
-<h1>README</h1>
-
 <h2>Bonjour a tous !</h2>
 
 Ce README est destiné principalement à <b>Séga</b> ( bonjour Séga ! :) ), mon prof de Java. Cependant, si vous êtes arrivé ici par curiosité, c'est un plaisir de vous accueillir.
 
-<h2>Context / Contenu du Répertoire</h2>
+<h2>Contenu du Répertoire</h2>
 
 Ce répertoire contient les TPs 1, 2 et 3 que j'ai réalisés pendant le cours de clean coding à Diginamic. Les TPs sont des forks d'un autre répertoire représentant du code pas propre, nécessitant des améliorations.
 
-<h2>Description des améliorations mises en ouvre dans les Travaux Pratiques (TPs)</h2>
+<h2>Les Travaux Pratiques</h2>
+
+Description des améliorations mises en ouvre dans les travaux pratiques (TPs) : 
 
 <h3>TP1</h3>
 
@@ -30,4 +30,7 @@ Cela améliore la cohérence générale du code et sa logique.
 3. Introduction de packages pour les animaux et les zones afin de structurer le code.
 
 <h2>Conclusion</h2>
+
+Author: Filip DABROWSKI
+
 J'espère avoir bien compris les tâches. C'était un exercice très interessant et je me suis amusé bien en les préparant, mais à un moment donné, je me suis rendu compte que j'avais peut-être dépassé la portée du TP.
