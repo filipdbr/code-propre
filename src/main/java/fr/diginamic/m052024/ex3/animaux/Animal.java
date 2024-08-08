@@ -9,6 +9,11 @@ public abstract class Animal {
     /** Map de variables */
 
     /**
+     * id d'animal, la clé principale
+     */
+    protected static int id;
+
+    /**
      * nom d'animal par example "Simba"
      */
     protected String nom;
@@ -24,7 +29,8 @@ public abstract class Animal {
     protected String comportement;
 
     // constructeur
-    public Animal(String nom, String type, String comportement) {
+    public Animal(int id, String nom, String type, String comportement) {
+        this.id = id;
         this.nom = nom;
         this.type = type;
         this.comportement = comportement;
@@ -32,6 +38,22 @@ public abstract class Animal {
 
     // méthodes
 
+    /**
+     * getter pour l'id
+     * @return l'id d'animal
+     */
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    /**
+     * getter pour le nom d'animal
+     * @return le nom d'animal
+     */
     public String getNom() {
         return nom;
     }
@@ -40,6 +62,10 @@ public abstract class Animal {
         this.nom = nom;
     }
 
+    /**
+     * getter pour le type d'animal
+     * @return le type d'animal
+     */
     public String getType() {
         return type;
     }
@@ -48,6 +74,10 @@ public abstract class Animal {
         this.type = type;
     }
 
+    /**
+     * getter pour le comportement
+     * @return le comportement de l'animal
+     */
     public String getComportement() {
         return comportement;
     }
@@ -56,6 +86,10 @@ public abstract class Animal {
         this.comportement = comportement;
     }
 
+    /**
+     * implementation de toString
+     * @return
+     */
     @Override
     public String toString() {
         return "Animal [nom = " + nom + ", comportement = " + comportement + "]";

@@ -1,29 +1,15 @@
 package fr.diginamic.m052024.ex3.zones;
 import java.util.List;
 
-public class FermeReptile {
+public class FermeReptile extends Zone {
 
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
-	
-	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
+	// constructeur
+	public FermeReptile(List<String> types, List<String> noms, List<String> comportements) {
+		super(types, noms, comportements);
 	}
-	
-	public void afficherListeAnimaux(){
-		for (String nom: noms){
-			System.out.println(nom);
-		}
-	}
-	
-	public int compterAnimaux(){
-		return noms.size();
-	}
-	
-	public double calculerKgsNourritureParJour(){
-		return noms.size() * 0.1;
+
+	// apparently 0.1 kg of food per animal per day
+	public double calculerKgsNourritureParJour() {
+		return getNoms().size() * 0.1;
 	}
 }

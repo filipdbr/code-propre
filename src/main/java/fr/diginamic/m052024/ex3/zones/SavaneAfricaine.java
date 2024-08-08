@@ -1,29 +1,15 @@
 package fr.diginamic.m052024.ex3.zones;
 import java.util.List;
 
-public class SavaneAfricaine {
+public class SavaneAfricaine extends Zone {
 
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
-	
-	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
+	// constructeur
+	public SavaneAfricaine(List<String> types, List<String> noms, List<String> comportements) {
+		super(types, noms, comportements);
 	}
-	
-	public void afficherListeAnimaux(){
-		for (String nom: noms){
-			System.out.println(nom);
-		}
-	}
-	
-	public int compterAnimaux(){
-		return noms.size();
-	}
-	
-	public int calculerKgsNourritureParJour(){
-		return noms.size() * 10;
+
+	// apparently 10 kg of food per animal per day
+	public double calculerKgsNourritureParJour() {
+		return getNoms().size() * 10;
 	}
 }

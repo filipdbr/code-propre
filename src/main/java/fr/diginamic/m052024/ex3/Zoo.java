@@ -1,20 +1,23 @@
 package fr.diginamic.m052024.ex3;
 
 import fr.diginamic.m052024.ex3.animaux.Animal;
+import fr.diginamic.m052024.ex3.zones.Zone;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class  Zoo {
+public class Zoo {
 
 	// attributs
 	private String nom;
 	private Set<Animal> animals;
+	private Set<Zone> zones;
 
 	// constructeur
 	public Zoo(String nom){
 		this.nom = nom;
 		this.animals = new HashSet<>();
+		this.zones = new HashSet<>();
 	}
 
 	//méthodes
@@ -50,5 +53,18 @@ public class  Zoo {
 	// let me setting animals set
 	public void setAnimals(Set<Animal> animals) {
 		this.animals = animals;
+	}
+
+	public Set<Zone> getZones() {
+		return zones;
+	}
+
+	public void setZones(Set<Zone> zones) {
+		this.zones = zones;
+	}
+
+	@Override
+	public String toString() {
+		return "Zoo{" + "nom='" + nom + '}';
 	}
 }

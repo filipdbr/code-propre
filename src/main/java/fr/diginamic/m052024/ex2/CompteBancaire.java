@@ -1,6 +1,6 @@
 package fr.diginamic.m052024.ex2;
 
-/** Représente un compte bancaire de type compte courante (type=CC) ou livret A (type=LA)
+/** Représente un compte bancaire de type compte courante (type=CC)
  * @author DIGINAMIC
  */
 public abstract class CompteBancaire {
@@ -35,20 +35,19 @@ public abstract class CompteBancaire {
 	 */
 	public abstract void debiterMontant(double montant);
 	
-	/** Getter for solde
-	 * @return the solde
+	/** Getter pour le solde
+	 * @return pouur le solde
 	 */
 	public double getSolde() {
 		return solde;
 	}
 	
 	/** Setter
-	 * @param solde the solde to set
+	 * setter pour le solde
+	 * @param solde le nouveau solde
 	 */
 	public void setSolde(double solde) {
 		this.solde = solde;
 	}
-	/** Getter for decouvert
-	 * @return the decouvert
-	 */
+
 }
