@@ -42,7 +42,6 @@ public abstract class Animal {
         this.type = type;
         this.comportement = comportement;
     }
-
     // méthodes
 
     /**

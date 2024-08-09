@@ -34,4 +34,14 @@ public class FermeReptile extends Zone {
 	public double calculerKgsNourritureParJour() {
 		return getNoms().size() * 0.1;
 	}
+
+	/**
+	 * Implémentation de la méthode toString pour représenter la zone sous forme de chaîne de caractères.
+	 *
+	 * @return Une chaîne de caractères représentant la zone.
+	 */
+	@Override
+	public String toString() {
+		return "Zone{name = Reptiles, nombre d'animaux : " + getNoms().size() + "}";
+	}
 }

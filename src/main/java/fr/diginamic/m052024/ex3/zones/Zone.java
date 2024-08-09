@@ -1,5 +1,7 @@
 package fr.diginamic.m052024.ex3.zones;
 
+import fr.diginamic.m052024.ex3.animaux.Animal;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +16,7 @@ public abstract class Zone {
     private List<String> types;
     private List<String> noms;
     private List<String> comportements;
+    private List<Animal> animals;
 
     /**
      * Constructeur de la classe Zone.
@@ -26,19 +29,16 @@ public abstract class Zone {
         this.types = new ArrayList<>(types);
         this.noms = new ArrayList<>(noms);
         this.comportements = new ArrayList<>(comportements);
+        this.animals = new ArrayList<>();
     }
 
     /**
      * Ajoute un animal à la zone.
      *
-     * @param typeAnimal Type de l'animal.
-     * @param nomAnimal Nom de l'animal.
-     * @param comportement Comportement de l'animal.
+     * @param animal l'animal a ajouter
      */
-    public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-        types.add(typeAnimal);
-        noms.add(nomAnimal);
-        comportements.add(comportement);
+    public void addAnimal(Animal animal) {
+        this.animals.add(animal);
     }
 
     // getters et setters
@@ -113,6 +113,10 @@ public abstract class Zone {
      */
     public void setComportements(List<String> comportements) {
         this.comportements = comportements;
+    }
+
+    public Animal getAnimal(int index) {
+        return animals.get(index);
     }
 
     // autres méthodes

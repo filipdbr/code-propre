@@ -34,4 +34,14 @@ public class SavaneAfricaine extends Zone {
 	public double calculerKgsNourritureParJour() {
 		return getNoms().size() * 10;
 	}
+
+	/**
+	 * Implémentation de la méthode toString pour représenter la zone sous forme de chaîne de caractères.
+	 *
+	 * @return Une chaîne de caractères représentant la zone.
+	 */
+	@Override
+	public String toString() {
+		return "Zone{name = Savane Africaine, nombre d'animaux : " + getNoms().size() + "}";
+	}
 }

@@ -34,4 +34,14 @@ public class Aquarium extends Zone {
 	public double calculerKgsNourritureParJour() {
 		return getNoms().size() * 0.2;
 	}
+
+	/**
+	 * Implémentation de la méthode toString pour représenter la zone sous forme de chaîne de caractères.
+	 *
+	 * @return Une chaîne de caractères représentant la zone.
+	 */
+	@Override
+	public String toString() {
+		return "Zone{name = Aquarium, nombre d'animaux : " + getNoms().size() + "}";
+	}
 }
