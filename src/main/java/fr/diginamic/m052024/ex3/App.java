@@ -7,11 +7,8 @@ import fr.diginamic.m052024.ex3.animaux.Oiseau;
 public class App {
 
 	/* todo:
-	    1. Create classes for zones eg. aquarium etc
-	    2. Add javadoc to animals package
-
-	   So far I've created a mother class of animals and then sublasses birds, mammals etc.
-	   I can consider this part done
+	    1. Create zones and animals
+	    2. Do some testing 
 	 */
 
 	public static void main(String[] args) {
@@ -29,6 +26,7 @@ public class App {
 		 */
 
 		Zoo berlin = new Zoo("Berlin Zoo");
+		System.out.println(berlin);
 
 	}
 

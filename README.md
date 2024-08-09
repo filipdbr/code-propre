@@ -1,6 +1,6 @@
 <h2>Bonjour a tous !</h2>
 
-Ce README est destiné principalement à <b>Séga</b> ( bonjour Séga ! :) ), mon prof de Java. Cependant, si vous êtes arrivé ici par curiosité, c'est un plaisir de vous accueillir.
+Ce README est destiné principalement à <b>Séga</b> ( <i>bonjour Séga !</i> :) ), mon prof de Java. Cependant, si vous êtes arrivé ici par curiosité, c'est un plaisir de vous accueillir.
 
 <h2>Contenu du Répertoire</h2>
 
