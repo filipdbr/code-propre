@@ -11,11 +11,12 @@ public class Oiseau extends Animal {
      * Constructeur de la classe Oiseau.
      *
      * @param id Identifiant unique de l'oiseau.
+     * @param prenom Prénom de l'animal.
      * @param nom Nom de l'oiseau.
      * @param comportement Comportement de l'oiseau, par exemple "Herbivore" ou "Carnivore".
      */
-    public Oiseau(int id, String nom, String comportement) {
-        super(id, nom, "Oiseau", comportement);
+    public Oiseau(int id, String prenom, String nom, String comportement) {
+        super(id, prenom, nom, "Oiseau", comportement);
     }
 
     /**
@@ -26,9 +27,11 @@ public class Oiseau extends Animal {
      */
     @Override
     public String toString() {
-        return "Oiseau {nom : "
-                + super.getNom()
+        return "Oiseau { prénom : " +
+                super.getPrenom() +
+                ", nom : " + super.getNom()
                 + ", type : " + super.getType()
-                + ", comportement : " + super.getComportement() + "\"}";
+                + ", comportement : " + super.getComportement() + "}";
     }
+
 }

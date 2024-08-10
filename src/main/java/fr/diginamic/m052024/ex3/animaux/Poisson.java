@@ -10,12 +10,13 @@ public class Poisson extends Animal {
     /**
      * Constructeur de la classe Poisson.
      *
-     * @param id Identifiant unique de l'Poisson.
-     * @param nom Nom de l'Poisson.
-     * @param comportement Comportement de l'Poisson, par exemple "Herbivore" ou "Carnivore".
+     * @param id Identifiant unique de poisson.
+     * @param prenom Prénom de poisson.
+     * @param nom Nom de poisson.
+     * @param comportement Comportement de poisson, par exemple "Herbivore" ou "Carnivore".
      */
-    public Poisson(int id, String nom, String comportement) {
-        super(id, nom, "Poisson", comportement);
+    public Poisson(int id, String prenom, String nom, String comportement) {
+        super(id, prenom, nom, "Poisson", comportement);
     }
 
     /**
@@ -26,9 +27,11 @@ public class Poisson extends Animal {
      */
     @Override
     public String toString() {
-        return "Poisson {nom : "
-                + super.getNom()
+        return "Poisson { prénom : " +
+                super.getPrenom() +
+                ", nom : " + super.getNom()
                 + ", type : " + super.getType()
-                + ", comportement : " + super.getComportement() + "\"}";
+                + ", comportement : " + super.getComportement() + "}";
     }
+
 }

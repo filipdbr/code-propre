@@ -6,58 +6,77 @@ import fr.diginamic.m052024.ex3.animaux.Poisson;
 import fr.diginamic.m052024.ex3.animaux.Serpent;
 import fr.diginamic.m052024.ex3.zones.*;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Classe principale pour gérer le zoo et les animaux.
+ * Cette classe permet de créer des animaux, des zones, et de les ajouter au zoo.
+ */
 public class App {
 
-	/* todo:
-	    1. I need to add names to animals
-	    2. I need to add empty constructors to other zones classes (done in zone carnivore)
-	    3. 
+	/**
+	 * Méthode principale pour exécuter le programme.
+	 *
+	 * @param args Arguments de la ligne de commande (non utilisés ici).
 	 */
-
 	public static void main(String[] args) {
 
-
+		// Création du zoo "Thoiry"
 		Zoo zooThoiry = new Zoo("Thoiry");
 
-		// Creation of new animals
-		Mammifere grace = new Mammifere(1, "Gazelle", "Herbivore");
-		Mammifere eva = new Mammifere(2, "Zebre", "Herbivore");
-		Mammifere king = new Mammifere(3, "Lion", "Carnivore");
-		Mammifere peter = new Mammifere(4, "Panthère", "Carnivore");
-		Poisson rufus = new Poisson(5, "Requin blanc", "Carnivore");
-		Poisson goldie = new Poisson(6, "Truite dorée", "Herbivore");
-		Serpent snake = new Serpent(7, "Boa constrictor", "Carnivore");
-		Serpent python = new Serpent(8, "Python", "Carnivore");
+		// Création de nouveaux animaux
+		Mammifere m1 = new Mammifere(1, "Grace", "Gazelle", "Herbivore");
+		Mammifere m2 = new Mammifere(2, "Eva", "Zebre", "Herbivore");
+		Mammifere m3 = new Mammifere(3, "King", "Lion", "Carnivore");
+		Mammifere m4 = new Mammifere(4, "Peter", "Panthère", "Carnivore");
+		Poisson p1 = new Poisson(5, "Rufus", "Requin blanc", "Carnivore");
+		Poisson p2 = new Poisson(6, "Goldie", "Truite dorée", "Herbivore");
+		Serpent s1 = new Serpent(7, "Snake", "Boa constrictor", "Carnivore");
+		Serpent s2 = new Serpent(8, "George", "Python", "Carnivore");
 
-		zooThoiry.addAnimal(grace);
-		zooThoiry.addAnimal(eva);
-		zooThoiry.addAnimal(king);
-		zooThoiry.addAnimal(peter);
-		zooThoiry.addAnimal(rufus);
-		zooThoiry.addAnimal(goldie);
-		zooThoiry.addAnimal(snake);
-		zooThoiry.addAnimal(python);
+		// Ajout des animaux au zoo
+		zooThoiry.addAnimal(m1);
+		zooThoiry.addAnimal(m2);
+		zooThoiry.addAnimal(m3);
+		zooThoiry.addAnimal(m4);
+		zooThoiry.addAnimal(p1);
+		zooThoiry.addAnimal(p2);
+		zooThoiry.addAnimal(s1);
+		zooThoiry.addAnimal(s2);
 
-		// show animals
+		// Affichage de la liste des animaux du zoo
 		zooThoiry.afficherListeAnimaux();
 
-		// creation of zone Carnivore
+		// Création des zones Carnivore
 		Zone zoneCarni = new ZoneCarnivore();
+		Zone savaneAfricaine = new SavaneAfricaine();
+		Zone aquarium = new Aquarium();
+		Zone fermeReptile = new FermeReptile();
 
-		// attaching zone to this zoo
+		// Ajout des zones au zoo
 		zooThoiry.addZone(zoneCarni);
+		zooThoiry.addZone(savaneAfricaine);
+		zooThoiry.addZone(aquarium);
+		zooThoiry.addZone(fermeReptile);
 
-		// adding animals to the zoo
-		zoneCarni.addAnimal(eva);
-		zoneCarni.addAnimal(peter);
+		// Ajout d'animaux à la zone Carnivore
+		savaneAfricaine.addAnimal(m1);
+		savaneAfricaine.addAnimal(m2);
+		savaneAfricaine.addAnimal(m3);
+		savaneAfricaine.addAnimal(m4);
+		aquarium.addAnimal(p1);
+		aquarium.addAnimal(p2);
+		fermeReptile.addAnimal(s1);
+		fermeReptile.addAnimal(s2);
 
-		// show animals in the zone
-		System.out.println("Your animal : " + zoneCarni.getAnimal(1));
+		// Affichage d'un animal spécifique dans la zone (index 1)
+		System.out.println("\nAnimal de votre choix : " + fermeReptile.getAnimal(1) + "\n");
 
+		// Affichage de la liste des animaux dans la zone Carnivore
+		savaneAfricaine.afficherListeAnimaux();
+
+		// Affichage des zones dans le zoo
+		System.out.println(zooThoiry.getZones());
 	}
-
 }

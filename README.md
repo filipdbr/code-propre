@@ -29,6 +29,14 @@ Cela améliore la cohérence générale du code et sa logique.
 2. Changement complet du modèle de données en introduisant deux classes mères : animal et zone, puis des sous-classes pour les implémentations pratiques.
 3. Introduction de packages pour les animaux et les zones afin de structurer le code.
 
+<b>Commentaire:</b>
+
+Dans la classe d'exécution App, j'ai créé un zoo, 4 zones et 8 animaux, comme dans le code initial. La solution que j'ai proposée fonctionne et offre une meilleure lisibilité ainsi qu'une plus grande évolutivité par rapport à la solution initiale.
+
+Il pourrait naturellement y avoir plus de zones, par exemple plusieurs aquariums, pour faciliter l'alimentation et éviter les conflits entre les poissons carnivores et herbivores.
+
+On pourrait également écrire un code qui attribue automatiquement les poissons à une zone spécifique après les avoir ajoutés au zoo. Peut-être que je me chargerai de cette tâche prochainement.
+
 <h2>Conclusion</h2>
 
 Author: Filip DABROWSKI

@@ -138,6 +138,15 @@ public abstract class Zone {
     }
 
     /**
+     * Affiche la liste d'animaux de la zone.
+     */
+    public void afficherListeAnimaux(){
+        for (Animal animal : animals){
+            System.out.println(animal);
+        }
+    }
+
+    /**
      * Retourne une représentation en chaîne de caractères de la zone.
      *
      * @return Chaîne de caractères représentant la zone.

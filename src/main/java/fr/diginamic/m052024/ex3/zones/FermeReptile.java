@@ -1,5 +1,8 @@
 package fr.diginamic.m052024.ex3.zones;
 
+import fr.diginamic.m052024.ex3.animaux.Animal;
+
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,6 +25,27 @@ public class FermeReptile extends Zone {
 	 */
 	public FermeReptile(List<String> types, List<String> noms, List<String> comportements) {
 		super(types, noms, comportements);
+	}
+
+	/**
+	 * Constructeur par défaut de la classe FermeReptile.
+	 * Initialise une zone carnivore vide.
+	 */
+	public FermeReptile() {
+		super(new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
+	}
+
+	/**
+	 * Ajoute un animal à la zone carnivore et met à jour les listes de types, noms et comportements.
+	 *
+	 * @param animal L'animal à etre ajouter à la zone.
+	 */
+	@Override
+	public void addAnimal(Animal animal) {
+		super.addAnimal(animal);
+		getTypes().add(animal.getType());
+		getNoms().add(animal.getNom());
+		getComportements().add(animal.getComportement());
 	}
 
 	/**

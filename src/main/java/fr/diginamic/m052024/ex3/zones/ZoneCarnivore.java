@@ -39,7 +39,7 @@ public class ZoneCarnivore extends Zone {
 	/**
 	 * Ajoute un animal à la zone carnivore et met à jour les listes de types, noms et comportements.
 	 *
-	 * @param animal L'animal à ajouter à la zone.
+	 * @param animal L'animal à etre ajouter à la zone.
 	 */
 	@Override
 	public void addAnimal(Animal animal) {

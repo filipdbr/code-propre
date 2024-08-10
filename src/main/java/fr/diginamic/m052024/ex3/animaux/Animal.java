@@ -7,13 +7,19 @@ package fr.diginamic.m052024.ex3.animaux;
 public abstract class Animal {
 
     // attributs
+
     /**
      * Identifiant unique pour chaque animal, utilisé comme clé principale.
      */
     protected static int id;
 
     /**
-     * Nom de l'animal, par exemple "Simba".
+     * Prénom de l'animal, par exemple "Simba".
+     */
+    protected String prenom;
+
+    /**
+     * Nom de l'animal, par exemple "Lion".
      */
     protected String nom;
 
@@ -32,22 +38,25 @@ public abstract class Animal {
      * Constructeur de la classe Animal.
      *
      * @param id Identifiant unique de l'animal.
+     * @param prenom Prénom de l'animal.
      * @param nom Nom de l'animal.
      * @param type Type de l'animal.
      * @param comportement Comportement de l'animal.
      */
-    public Animal(int id, String nom, String type, String comportement) {
+    public Animal(int id, String prenom, String nom, String type, String comportement) {
         this.id = id;
+        this.prenom = prenom;
         this.nom = nom;
         this.type = type;
         this.comportement = comportement;
     }
+
     // méthodes
 
     /**
      * Getter pour l'identifiant de l'animal.
      *
-     * @return l'identifiant de l'animal.
+     * @return l'id de l'animal.
      */
     public int getId() {
         return id;
@@ -56,10 +65,28 @@ public abstract class Animal {
     /**
      * Setter pour l'identifiant de l'animal.
      *
-     * @param id Nouveau identifiant de l'animal.
+     * @param id Nouveau id de l'animal.
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+    /**
+     * Getter pour le prénom de l'animal.
+     *
+     * @return le prénom de l'animal.
+     */
+    public String getPrenom() {
+        return prenom;
+    }
+
+    /**
+     * Setter pour le prénom de l'animal.
+     *
+     * @param prenom Nouveau prénom de l'animal.
+     */
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
 
     /**
@@ -123,6 +150,10 @@ public abstract class Animal {
      */
     @Override
     public String toString() {
-        return "Animal [nom=" + nom + ", comportement=" + comportement + "]";
+        return "Animal "
+                + "[prénom : " + prenom
+                + ", + nom : " + nom
+                + ", + comportement : " + comportement
+                + "]";
     }
 }

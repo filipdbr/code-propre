@@ -11,11 +11,12 @@ public class Mammifere extends Animal {
      * Constructeur de la classe Mammifere.
      *
      * @param id Identifiant unique du mammifère.
+     * @param prenom Prénom de l'animal.
      * @param nom Nom du mammifère.
      * @param comportement Comportement du mammifère, par exemple "Herbivore" ou "Carnivore".
      */
-    public Mammifere(int id, String nom, String comportement) {
-        super(id, nom, "Mammifere", comportement);
+    public Mammifere(int id, String prenom, String nom, String comportement) {
+        super(id, prenom, nom, "Mammifere", comportement);
     }
 
     /**
@@ -26,9 +27,11 @@ public class Mammifere extends Animal {
      */
     @Override
     public String toString() {
-        return "Mammifere{nom : "
-                + super.getNom()
+        return "Mammifère { prénom : " +
+                super.getPrenom() +
+                ", nom : " + super.getNom()
                 + ", type : " + super.getType()
-                + ", comportement : " + super.getComportement() + "\"}";
+                + ", comportement : " + super.getComportement() + "}";
     }
+
 }

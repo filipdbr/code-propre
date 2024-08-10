@@ -10,12 +10,13 @@ public class Serpent extends Animal {
     /**
      * Constructeur de la classe Serpent.
      *
-     * @param id Identifiant unique de l'Serpent.
+     * @param id Identifiant unique du serpent.
+     * @param prenom Prénom du serpent
      * @param nom Nom de l'Serpent.
-     * @param comportement Comportement de l'Serpent, par exemple "Herbivore" ou "Carnivore".
+     * @param comportement Comportement du serpent, par défault le "Carnivore".
      */
-    public Serpent(int id, String nom, String comportement) {
-        super(id, nom, "Serpent", comportement);
+    public Serpent(int id, String prenom, String nom, String comportement) {
+        super(id, prenom, nom, "Serpent", "Carnivore");
     }
 
     /**
@@ -26,9 +27,11 @@ public class Serpent extends Animal {
      */
     @Override
     public String toString() {
-        return "Serpent {nom : "
-                + super.getNom()
+        return "Serpent { prénom : " +
+                super.getPrenom() +
+                ", nom : " + super.getNom()
                 + ", type : " + super.getType()
-                + ", comportement : " + super.getComportement() + "\"}";
+                + ", comportement : " + super.getComportement() + "}";
     }
+
 }
